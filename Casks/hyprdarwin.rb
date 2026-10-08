@@ -1,10 +1,10 @@
 # Template for Casks/hyprdarwin.rb in BruceChanJianLe/homebrew-hyprdarwin.
-# .github/workflows/release.yml fills in 0.2.0 and d117c078eece7a4fafc6f8e31271f0fce4ce7b5196970d47f85673ea14364cb5 with
+# .github/workflows/release.yml fills in 0.3.0 and d85cca6e878519b1820faa4d263e83d5d47757422cc6e38489f494630c9b5872 with
 # scripts/render-cask.sh and commits the result to the tap; do not edit the
 # tap's copy by hand.
 cask "hyprdarwin" do
-  version "0.2.0"
-  sha256 "d117c078eece7a4fafc6f8e31271f0fce4ce7b5196970d47f85673ea14364cb5"
+  version "0.3.0"
+  sha256 "d85cca6e878519b1820faa4d263e83d5d47757422cc6e38489f494630c9b5872"
 
   url "https://github.com/BruceChanJianLe/hyprdarwin/releases/download/v#{version}/hyprdarwin-#{version}.zip"
   name "hyprdarwin"
@@ -20,6 +20,7 @@ cask "hyprdarwin" do
   depends_on macos: :tahoe
 
   app "hyprdarwin.app"
+  binary "#{appdir}/hyprdarwin.app/Contents/MacOS/hyprdarwinctl"
 
   # Self-signed, not notarized: without this Gatekeeper refuses to open it.
   postflight do
