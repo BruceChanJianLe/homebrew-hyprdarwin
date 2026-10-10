@@ -1,10 +1,10 @@
 # Template for Casks/hyprdarwin.rb in BruceChanJianLe/homebrew-hyprdarwin.
-# .github/workflows/release.yml fills in 0.3.0 and d85cca6e878519b1820faa4d263e83d5d47757422cc6e38489f494630c9b5872 with
+# .github/workflows/release.yml fills in 0.3.1 and e4a961fdaa8eb89d9172cf373c469a463bbd828de674cc1f2f4c20a6e039c03b with
 # scripts/render-cask.sh and commits the result to the tap; do not edit the
 # tap's copy by hand.
 cask "hyprdarwin" do
-  version "0.3.0"
-  sha256 "d85cca6e878519b1820faa4d263e83d5d47757422cc6e38489f494630c9b5872"
+  version "0.3.1"
+  sha256 "e4a961fdaa8eb89d9172cf373c469a463bbd828de674cc1f2f4c20a6e039c03b"
 
   url "https://github.com/BruceChanJianLe/hyprdarwin/releases/download/v#{version}/hyprdarwin-#{version}.zip"
   name "hyprdarwin"
